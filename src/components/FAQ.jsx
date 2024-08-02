@@ -22,7 +22,7 @@ const FAQ = () => {
   return (
     <div className="container px-6 py-16 mx-auto">
       <h1 className="mb-8 text-4xl font-bold text-center text-gray-800">Frequently Asked Questions</h1>
-      <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
         {faqs.map((faq, index) => (
           <div key={index} className="bg-white border border-gray-200 rounded-lg shadow-md">
             <button

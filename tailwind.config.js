@@ -4,13 +4,16 @@ export default {
   theme: {
     extend: {
       colors: {
-        'primary': '#3490dc',  // Custom primary color
-        'secondary': '#ffed4a', // Custom secondary color
-        'accent': '#e3342f',    // Custom accent color
+        'primary': '#3490dc', 
+        'secondary': '#ffed4a', 
+        'accent': '#e3342f',   
         'custom-gray': '#f8f9fa', 
         'cblack':'#000',
       
       },
+      backgroundImage:{
+        'headerImg:':"url('../../src/assets/bgImages/headerBg.jpg')"
+      }
     },
   },
   plugins: [],

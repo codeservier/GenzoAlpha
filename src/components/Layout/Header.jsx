@@ -9,20 +9,15 @@ const Header = () => {
   };
 
   return (
-    <header className="fixed top-0 z-50 w-full px-6 py-3 font-medium text-black bg-white shadow-md lg:px-14 ">
-
+    <header className="fixed top-0 z-50 w-full px-6  font-medium text-black bg-white shadow-md lg:px-50 ">
       <div className="container flex items-center justify-between mx-auto">
         <div className="text-lg font-bold h-[80px] w-[80px] ">
           <a href="/">
-            <img
-              src={logo}
-              alt="Logo"
-              className="bg-cover h-[80px] w-[80px]"
-            />
+            <img src={logo} alt="Logo" className="bg-cover h-[80px] w-[80px]" />
           </a>
         </div>
 
-        <nav className="hidden space-x-20 font-bold md:flex">
+        <nav className="hidden space-x-10 font-bold md:flex">
           <a href="/" className="hover:text-gray-300">
             Services
           </a>
@@ -36,12 +31,12 @@ const Header = () => {
             Contact Us
           </a>
         </nav>
-        <div className="md:hidden">
-          <button onClick={toggleMenu}>
+        <div className="md:hidden  max-w-10">
+          <button className="" onClick={toggleMenu}>
             {isOpen ? <FiAlignJustify /> : <FiAlignJustify />}
           </button>
         </div>
-        {/* Search Icon */}
+     
         <div className="hidden pt-2 pb-2 pl-8 pr-8 font-bold text-white bg-blue-500 rounded-lg md:block">
           <nav>
             <a href="/getstarted" className="hover:text-gray-300">
@@ -53,8 +48,7 @@ const Header = () => {
       {isOpen && (
         <nav className="font-bold bg-white shadow-md md:hidden">
           <a href="/" className="block px-4 py-2 hover:bg-gray-200">
-            Services 
-            
+            Services
           </a>
           <a href="/mylearning" className="block px-4 py-2 hover:bg-gray-200">
             Pricing
@@ -65,11 +59,10 @@ const Header = () => {
           <a href="/contact" className="block px-4 py-2 hover:bg-gray-200">
             Contact Us
           </a>
-
+        
           <a href="/getstarted" className="block px-4 py-2 hover:bg-gray-200">
             Get Started
           </a>
-
         </nav>
       )}
     </header>
